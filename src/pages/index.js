@@ -2,16 +2,20 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/card'
 import Section from '../components/section'
+import Wave from '../components/wave'
 
 const IndexPage = () => (
 
 	<main className="content">
+
 		<section className="hero">
 			<div className="hero__group">
 				<h1>Learn how to design and code React apps</h1>
 				<p>Complete courses about the best tools and design systems.</p>
 				<Link to="/page-2">Watch video</Link>
 			</div>
+
+			<Wave />
 		</section>
 
 		<section className="cards">

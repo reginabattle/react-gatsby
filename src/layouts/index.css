@@ -35,7 +35,8 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
-  height: 80vh;
+  height: 100vh;
+  position: relative;
 }
 
 .hero__group {
@@ -69,6 +70,16 @@ a {
 .hero a:hover {
   background: #fff;
   color: #212121;
+}
+
+
+/* Wave
+----------------------------------*/
+
+.hero svg {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
 }
 
 
