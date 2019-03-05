@@ -16,27 +16,27 @@ const IndexPage = () => (
 		<section className="cards">
 			<div className="cards__group">
 				<Card 
-					image="https://images.unsplash.com/photo-1551182112-94fbf507444e" 
+					image={require('../images/bg-1.jpg')}
 					title="React for designers" 
 					text="12 sections" />
 
 				<Card 
-					image="https://images.unsplash.com/photo-1550684848-fac1c5b4e853"
+					image={require('../images/bg-2.jpg')}
 					title="CSS Grid" 
 					text="18 sections" />
 
 				<Card 
-					image="https://images.unsplash.com/photo-1550353175-a3611868086b"
+					image={require('../images/bg-3.jpg')}
 					title="SVG Animations" 
 					text="8 sections" />
 				
 				<Card 
-					image="https://images.unsplash.com/photo-1551182112-94fbf507444e" 
+					image={require('../images/bg-4.jpg')}
 					title="Design systems" 
 					text="21 sections" />
 				
 				<Card 
-					image="https://images.unsplash.com/photo-1550353175-a3611868086b"
+					image={require('../images/bg-5.jpg')}
 					title="User experience design" 
 					text="28 sections" />
 			</div>

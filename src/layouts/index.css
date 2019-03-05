@@ -26,13 +26,6 @@ a {
   transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-/* Content
-----------------------------------*/
-
-.content {
-  padding-top: 66px;
-}
-
 /* Hero
 ----------------------------------*/
 
@@ -42,13 +35,13 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
-  height: 75vh;
+  height: 80vh;
 }
 
 .hero__group {
   color: #fff;
   margin: 0 auto;
-  padding: 5em 0 0;
+  padding: 6em 0 0;
   max-width: 34em;
   opacity: 0;
   animation: heroAnimation 2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);

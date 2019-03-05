@@ -3,11 +3,11 @@
 
 .header {
 	width: 100%;
-  background: #fff;
+  background: transparent;
   padding: 1em 0;
   position: fixed;
-  border-bottom: 1px solid #eee;
   z-index: 100;
+  transition: 0.8s cubic-bezier(0.2,0.8,0.2,1);
 }
 
 .header__group {
@@ -17,12 +17,12 @@
 }
 
 .header__title {
-	color: #212121;
+	color: #fff;
 	padding: 0 1em;
 }
 
 .header__menu a {
-	color: #212121;
+	color: #fff;
 	padding: 0 1em;
 }
 
@@ -46,6 +46,24 @@
 }
 
 
+/* Header - Scrolled
+----------------------------------*/
+
+.header.has-scrolled {
+	background: #fff;
+	padding: 0.75em 0;
+	border-bottom: 1px solid #eee;
+}
+
+.header.has-scrolled .header__title, 
+.header.has-scrolled .header__menu a {
+	color: #212121;
+}
+
+.header.has-scrolled .header__menu .header__button {
+	color: #fff;
+}
+
 /* Media queries
 ----------------------------------*/
 
@@ -55,5 +73,4 @@
 		margin: 0 auto;
 		max-width: 1200px;
 	}
-
 }
