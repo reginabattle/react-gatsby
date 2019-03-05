@@ -2,23 +2,32 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SectionGroup = styled.div`
-	background: #eee;
-	padding: 4em 0;
+	background-image: url(${props => props.image});
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding: 6em 0;
+	margin-bottom: 4em;
 `
 
 const SectionTitleGroup = styled.div `	
 	display: grid;
-	grid-template-columns: 1fr 1fr;
 	align-items: center;
 	justify-items: center;
 	max-width: 1200px;
 	margin: 0 auto;
+
+	@media (min-width: 768px) {
+		grid-template-columns: 1fr 1fr;
+	}
 `
 const SectionTitle = styled.h3`
+	color: #fff;
 	font-size: 2rem;
 `
 
 const SectionText = styled.p `
+	color: #fff;
   max-width: 28em;
 `
 
