@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
       <nav className="header__menu">
         <Link to="/courses">Courses</Link>
         <Link to="/downloads">Downloads</Link>
-        <Link to="/workshops">Courses</Link>
+        <Link to="/workshops">Workshops</Link>
         <Link to="/buy" className="header__button">Buy</Link>
       </nav>
     </div>
