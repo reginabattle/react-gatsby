@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/card'
+import Section from '../components/section'
 
 const IndexPage = () => (
 
@@ -41,6 +42,11 @@ const IndexPage = () => (
 					text="28 sections" />
 			</div>
 		</section>
+
+		<Section
+			image={require('../images/bg-1.jpg')}
+			title="React for designers"
+			text="Learn how to build a modern site using React and the most effieceint tools to get your site online. Get familar with CSS Grid, animations, interations, dynamic data, and more." />
 
 	</main>
 )
