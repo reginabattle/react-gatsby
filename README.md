@@ -1,7 +1,5 @@
 # Gatbsy website
-The website is using the default Gatsby starter.
-
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+A modern, dynamic website using React and [Gatsby](https://www.gatsbyjs.org).
 
 ## Install
 
