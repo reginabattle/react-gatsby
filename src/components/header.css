@@ -18,12 +18,14 @@
 
 .header__title {
 	color: #fff;
+	font-size: 1.5rem;
 	padding: 0 1em;
 }
 
 .header__menu a {
 	color: #fff;
-	padding: 0 1em;
+	font-size: 1.25rem;
+	padding: 0 1.5em;
 }
 
 .header__menu a:hover {

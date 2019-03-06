@@ -33,16 +33,16 @@ a {
   background-image: url('https://images.unsplash.com/photo-1461988625982-7e46a099bf4f');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom;
   background-attachment: scroll;
-  height: 100vh;
+  height: 80vh;
   position: relative;
 }
 
 .hero__group {
   color: #fff;
   margin: 0 auto;
-  padding: 6em 0 0;
+  padding: 8em 0 0;
   max-width: 34em;
   opacity: 0;
   animation: heroAnimation 2s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
