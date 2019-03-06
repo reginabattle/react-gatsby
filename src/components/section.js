@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const SectionGroup = styled.div`
+const SectionGroup = styled.section`
 	background-image: url(${props => props.image});
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
 	padding: 6em 0;
-	margin-bottom: 4em;
 `
 
 const SectionTitleGroup = styled.div `	
@@ -18,16 +17,17 @@ const SectionTitleGroup = styled.div `
 	margin: 0 auto;
 
 	@media (min-width: 768px) {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: repeat(2, 1fr);
 	}
 `
 const SectionTitle = styled.h3`
 	color: #fff;
-	font-size: 2rem;
+	font-size: 2.75rem;
 `
 
 const SectionText = styled.p `
 	color: #fff;
+	font-size: 1.25rem;
   max-width: 28em;
 `
 

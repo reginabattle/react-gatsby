@@ -1,11 +1,24 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
 import Card from '../components/card'
 import Section from '../components/section'
 import Wave from '../components/wave'
+import Cell from '../components/cell'
+import cardData from '../../cardData.json'
+
+const SectionCellGroup = styled.section`
+	padding: 4em 0;
+
+	@media (min-width: 768px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+`
 
 const IndexPage = () => (
-
 	<main className="content">
 
 		<section className="hero">
@@ -50,7 +63,14 @@ const IndexPage = () => (
 		<Section
 			image={require('../images/bg-1.jpg')}
 			title="React for designers"
-			text="Learn how to build a modern site using React and the most effieceint tools to get your site online. Get familar with CSS Grid, animations, interations, dynamic data, and more." />
+			text="Learn how to build a modern site using React and the most effieceint tools to get your site online. Get familar with CSS Grid, animations, interations, dynamic data, and more." 
+		/>
+
+		<SectionCellGroup>
+			{cardData.cells.map(cell => (
+				<Cell title={cell.title} image={cell.image} />
+			))}
+		</SectionCellGroup>
 
 	</main>
 )
