@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Layout from '../components/layout/layout'
+import Hero from '../components/hero/hero'
 import Card from '../components/card/card'
+import CardList from '../components/card/card-list'
 import Section from '../components/section/section'
-import Wave from '../components/wave/wave'
 import Cell from '../components/cell/cell'
 import cardData from '../../static/data.json'
 
@@ -21,44 +21,33 @@ const SectionCellGroup = styled.section`
 
 export default () => (
 	<Layout>
-		<section className="hero">
-			<div className="hero__group">
-				<h1>Learn how to design and code React apps</h1>
-				<p>Complete courses about the best tools and design systems.</p>
-				<Link to="/">Watch video</Link>
-			</div>
+		<Hero />
+		<CardList>
+			<Card 
+				image="../../images/bg-1.jpg"
+				title="React for designers" 
+				text="12 sections" />
 
-			<Wave />
-		</section>
+			<Card 
+				image="../../images/bg-2.jpg"
+				title="CSS Grid" 
+				text="18 sections" />
 
-		<section className="cards">
-			<div className="cards__group">
-				<Card 
-					image="../../images/bg-1.jpg"
-					title="React for designers" 
-					text="12 sections" />
-
-				<Card 
-					image="../../images/bg-2.jpg"
-					title="CSS Grid" 
-					text="18 sections" />
-
-				<Card 
-					image="../../images/bg-3.jpg"
-					title="SVG Animations" 
-					text="8 sections" />
-				
-				<Card 
-					image="../../images/bg-4.jpg"
-					title="Design systems" 
-					text="21 sections" />
-				
-				<Card 
-					image="../../images/bg-5.jpg"
-					title="User experience design" 
-					text="28 sections" />
-			</div>
-		</section>
+			<Card 
+				image="../../images/bg-3.jpg"
+				title="SVG Animations" 
+				text="8 sections" />
+			
+			<Card 
+				image="../../images/bg-4.jpg"
+				title="Design systems" 
+				text="21 sections" />
+			
+			<Card 
+				image="../../images/bg-5.jpg"
+				title="User experience design" 
+				text="28 sections" />
+		</CardList>
 
 		<Section
 			image="../images/bg-1.jpg"

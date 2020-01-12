@@ -1,14 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import './header.css'
+import styles from'./header.module.css'
 
 // Stateful component
 class Header extends React.Component {
-
-	// Initial state 
 	constructor(props) {
 		super(props)
-
 		this.state = {
 			hasScrolled: false
 		}
@@ -32,15 +29,15 @@ class Header extends React.Component {
 
 	render() {
 		return (
-			<header className={ this.state.hasScrolled ? 'header has-scrolled' : 'header' }>
-				<div className="header__group">
-					<Link to="/" className="header__title">Design + Code</Link>
+			<header className={`${styles.header}${this.state.hasScrolled ? ` ${styles.hasScrolled}` : ''}`}>
+				<div className={styles.group}>
+					<Link to="/" className={styles.title}>Design + Code</Link>
 
-					<nav className="header__menu">
+					<nav className={styles.menu}>
 						<Link to="/courses">Courses</Link>
 						<Link to="/downloads">Downloads</Link>
 						<Link to="/workshops">Workshops</Link>
-						<Link to="/buy" className="header__button">Buy</Link>
+						<Link to="/buy" className={styles.button}>Buy</Link>
 					</nav>
 				</div>
 			</header>

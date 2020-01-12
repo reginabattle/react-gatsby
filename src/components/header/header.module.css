@@ -1,0 +1,115 @@
+/* Header
+----------------------------------*/
+.header {
+	width: 100%;
+	background: transparent;
+	padding: 1em 1.2em;
+	position: fixed;
+	z-index: 100;
+	transition: 0.8s cubic-bezier(0.2,0.8,0.2,1);
+
+	& .button {
+		background: #36558F;
+		color: #fff;
+		cursor: pointer;
+		line-height: 1;
+		padding: 0.5em 1em;
+		border-radius: 4px;
+
+		&:hover {
+			color: #fff;
+			transform: translateY(-3px);
+			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+		}
+
+		&::after {
+			display: none;
+		}
+	}
+}
+
+.group {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Site title */
+
+.title {
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+/* Menu */
+
+.menu {
+	display: none;
+	margin-top: 0.5em;
+
+	& a {
+		color: #fff;
+		font-size: 1.15rem;
+		padding: 0 0.8em;
+
+		&:first-child {
+			padding-left: 0;
+		}
+		
+		&::after {
+			content: '';
+			display: block;
+			background: #fff;
+			width: 0;
+			height: 3px;
+			transition: 0.4s all ease-in-out;
+		}
+
+		&:hover::after {
+			width: 100%;	
+		}
+	}
+}
+
+/* Header - Scrolled
+----------------------------------*/
+.has-scrolled {
+	background: #fff;
+	border-bottom: 1px solid #eee;
+
+	& a,
+	& .title {
+		color: #212121;
+		font-size: 1rem;
+	}
+
+	& .title {
+		font-size: 1.2rem;
+	}
+
+	& .button {
+		color: #fff;
+	}
+}
+
+/* Media queries
+----------------------------------*/
+@media (min-width: 768px) {
+	.group {
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+
+	& .title {
+		font-size: 2rem;
+	}
+
+	.menu {
+		display: block;
+		margin-top: 0;
+	
+		& a {
+			padding: 0 1.5em;
+		}
+	}
+}

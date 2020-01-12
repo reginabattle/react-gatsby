@@ -5,6 +5,7 @@ module.exports = {
     keywords: 'react course, react for designers, course'
   },
   plugins: [
+    'gatsby-plugin-postcss',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`, 

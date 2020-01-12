@@ -1,0 +1,44 @@
+/* Card
+----------------------------------*/
+.card {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	cursor: pointer;
+	width: 300px;
+	height: 225px;
+	overflow: hidden;
+	margin: 0 auto 3em auto;
+	padding: 0 2em;
+	position: relative;
+	border-radius: 4px;
+	border: 1px solid #eee;
+	box-shadow: 0 8px 8px rgba(0,0,0,0.09);
+	transition: 0.8s cubic-bezier(0.2,0.8,0.2,1);
+
+	& h3 {
+		color: #fff;
+	}
+
+	& p {
+		color: #fff;
+		align-self: end;
+	}
+
+	& img {
+		position: absolute;
+		top: 0;
+		height: 110%;
+		z-index: -1;
+		transition: 0.8s cubic-bezier(0.2,0.8,0.2,1);
+	}
+
+	&:hover {
+		transform: scale(1.1, 1.1);
+
+		& img {
+			transform: translateY(-20px);
+		}
+	}
+}
+
+

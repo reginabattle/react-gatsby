@@ -1,0 +1,21 @@
+/* Card list
+----------------------------------*/
+.group {
+	display: grid;
+}
+
+/* Media queries
+----------------------------------*/
+@media (min-width: 768px) {
+	.group {
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 980px) {
+	.group {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
