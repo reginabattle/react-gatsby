@@ -1,7 +1,7 @@
 {
   "name": "react-gatsby-app",
   "author": "Regina Battle <hello@reginabattle.com>",
-  "description": "A React app using Gatsby",
+  "description": "Website template built with React and Gatsby.",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
@@ -12,7 +12,6 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "forestry:preview": "gatsby develop -p 8080 -H 0.0.0.0",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
