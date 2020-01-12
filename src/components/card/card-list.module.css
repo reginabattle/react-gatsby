@@ -1,5 +1,9 @@
 /* Card list
 ----------------------------------*/
+.cards {
+	padding-bottom: 3em;
+}
+
 .group {
 	display: grid;
 }

@@ -10,6 +10,7 @@ const FooterGroup = styled.footer `
 const LinkGroup = styled.div`
 	display: flex;
 	align-items: center;
+	padding: 0 1.2em;
 	justify-content: space-between;
 
 	a {

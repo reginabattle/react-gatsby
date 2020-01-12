@@ -5,6 +5,7 @@ const CellGroup = styled.div`
 	display: grid;
 	grid-column-gap: 25px;
 	align-items: center;
+	padding: 0 1.2em;
 	grid-template-columns: 60px auto;
 `
 

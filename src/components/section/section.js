@@ -6,7 +6,7 @@ const SectionGroup = styled.section`
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
-	padding: 6em 0;
+	padding: 6em 1.2em;
 `
 
 const SectionTitleGroup = styled.div `	
