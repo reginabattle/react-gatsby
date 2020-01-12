@@ -5,13 +5,16 @@ module.exports = {
     keywords: 'react course, react for designers, course'
   },
   plugins: [
-  	'gatsby-plugin-react-helmet',
-  	{
-  		resolve: 'gatsby-source-contentful',
-  		options: {
-  			spaceId: 'b6doru5r9d7p',
-  			accessToken: '615363523c2407ccc754f78e0d8495269c129c6cce864874e382fa21c7b74081'
-  		}
-  	}
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sharp`, 
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `b6doru5r9d7p`,
+        accessToken: '615363523c2407ccc754f78e0d8495269c129c6cce864874e382fa21c7b74081',
+      },
+    },
   ],
 }
