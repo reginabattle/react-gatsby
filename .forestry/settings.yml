@@ -11,6 +11,9 @@ sections:
   label: Pages
   create: documents
   match: "**/*"
+  new_doc_ext: ".js"
+  templates:
+  - page
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
